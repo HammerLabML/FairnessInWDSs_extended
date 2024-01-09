@@ -9,12 +9,12 @@ Especially if AI-supported decisions affect the society, the fairness of such AI
 The implementation of the proposed methods can be found in the `Implementation` folder. 
 
 The data required for these methods are stored or can be generated using the `2_DataGeneration` subfolder:
--   The subfolder `2_DataGeneration/Hanoi` holds the data associated with the Hanoi network which is used in the `3_DataUsage`subfolder. 
+-   The subfolder `2_DataGeneration/Hanoi` holds the data associated with the Hanoi network.
     It is the same data as used in [this previous work](https://github.com/jstrotherm/FairnessInWDNs/blob/main/Paper.pdf). 
     For the data generation, we refer to [this previous repository](https://github.com/jstrotherm/FairnessInWDNs). 
     In this repository, we only store the resulting excel files.
 -   The subfolder `2_DataGeneration/L-Town` is a modified version of [this previous repository](https://github.com/HammerLabML/GCNs_for_WDS). 
-    Running the `TODO.py` script generates the data associated with the L-Town network which is used in the `3_DataUsage`subfolder and stores it in csv files. 
+    Running the `TODO.py` script generates the data associated with the L-Town network and stores it in csv files. 
     The csv files are not stored in this repository due to their sizes. 
 -   The excel and csv files are in turn used in the `3_DataUsage` subfolder.
 
