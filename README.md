@@ -23,7 +23,7 @@ The data required for these methods are stored or can be generated using the `2_
     - Consecutively, 
     running the `get_scenario_residuals.py` script generates the data associated with the L-Town network and stores it in a csv file. 
     - Finally, 
-    running the `get_scenario_residuals.ipynb` notebook generates network information required for the network visualization and stores it in a csv file.
+    running the `get_node_ids.ipynb` notebook generates network information required for the network visualization and stores it in a csv file.
     - The csv files are not stored in this repository due to their sizes. 
 -   The excel and csv files are in turn used in the `3_DataUsage` subfolder.
 
