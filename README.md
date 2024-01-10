@@ -14,14 +14,17 @@ The data required for these methods are stored or can be generated using the `2_
     For the data generation, we refer to [this previous repository](https://github.com/jstrotherm/FairnessInWDNs). 
     In this repository, we only store the resulting excel files.
 -   The subfolder `2_DataGeneration/L-Town` is a modified version of [this previous repository](https://github.com/HammerLabML/GCNs_for_WDS). 
-    Running the `gen_scenario_leakages.py` script generates different leakage scenarios. 
-    In ordner to run the script, it is required to 
+    - Due to their sizes, some of additionally required files can not be stored in this repository. 
+    Therefore, it is required to 
     a) download [this .inp file](https://github.com/KIOS-Research/BattLeDIM/blob/master/Dataset%20Generator/L-TOWN_v2_Real.inp) and store it in the `2_DataGeneration/L-Town/networks/L-Town/Real` subfolder and 
     b) train a model as specified in [this previous repository](https://github.com/HammerLabML/GCNs_for_WDS) and store it as `2_DataGeneration/L-Town/trained_models/model_L-TOWN_2880_45_1.pt`. 
-    The files are not stored in this repository due to their sizes. 
-    Consecutively, running the `get_scenario_residuals.py` script generates the data associated with the L-Town network and stores it in csv files. 
-    Finally, running the `get_scenario_residuals.ipynb` notebook generates another csv file with network information.
-    The csv files are not stored in this repository due to their sizes. 
+    - Afterwards, 
+    running the `gen_scenario_leakages.py` script generates different leakage scenarios. 
+    - Consecutively, 
+    running the `get_scenario_residuals.py` script generates the data associated with the L-Town network and stores it in csv files. 
+    - Finally, 
+    running the `get_scenario_residuals.ipynb` notebook generates another csv file with network information.
+    - The csv files are not stored in this repository due to their sizes. 
 -   The excel and csv files are in turn used in the `3_DataUsage` subfolder.
 
 The methods themselves can be used using the `3_DataUsage` subfolder:
