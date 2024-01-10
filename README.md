@@ -9,26 +9,26 @@ Especially if AI-supported decisions affect the society, the fairness of such AI
 The implementation of the proposed methods can be found in the `Implementation` folder. 
 
 The data required for these methods are stored or can be generated using the `2_DataGeneration` subfolder:
--   The subfolder `2_DataGeneration/Hanoi` holds the data associated with the Hanoi network.
+-   The subfolder `2_DataGeneration/Hanoi` holds the data associated with the Hanoi network stored as excel files.
     It is the same data as used in [this previous work](https://github.com/jstrotherm/FairnessInWDNs/blob/main/Paper.pdf). 
     For the data generation, we refer to [this previous repository](https://github.com/jstrotherm/FairnessInWDNs). 
     In this repository, we only store the resulting excel files.
 -   The subfolder `2_DataGeneration/L-Town` is a modified version of [this previous repository](https://github.com/HammerLabML/GCNs_for_WDS). 
     - Due to their sizes, some of additionally required files can not be stored in this repository. 
     Therefore, it is required to 
-    a) download [this .inp file](https://github.com/KIOS-Research/BattLeDIM/blob/master/Dataset%20Generator/L-TOWN_v2_Real.inp) and store it in the `2_DataGeneration/L-Town/networks/L-Town/Real` subfolder and 
+    a) download [this .inp file](https://github.com/KIOS-Research/BattLeDIM/blob/master/Dataset%20Generator/L-TOWN_v2_Real.inp) and store it as `2_DataGeneration/L-Town/networks/L-Town/Real/L-TOWN_Real.inp` and 
     b) train a model as specified in [this previous repository](https://github.com/HammerLabML/GCNs_for_WDS) and store it as `2_DataGeneration/L-Town/trained_models/model_L-TOWN_2880_45_1.pt`. 
     - Afterwards, 
     running the `gen_scenario_leakages.py` script generates different leakage scenarios. 
     - Consecutively, 
-    running the `get_scenario_residuals.py` script generates the data associated with the L-Town network and stores it in csv files. 
+    running the `get_scenario_residuals.py` script generates the data associated with the L-Town network and stores it in a csv file. 
     - Finally, 
-    running the `get_scenario_residuals.ipynb` notebook generates another csv file with network information.
+    running the `get_scenario_residuals.ipynb` notebook generates network information required for the network visualization and stores it in a csv file.
     - The csv files are not stored in this repository due to their sizes. 
 -   The excel and csv files are in turn used in the `3_DataUsage` subfolder.
 
 The methods themselves can be used using the `3_DataUsage` subfolder:
--   In the `FairnessExploration_Hanoi_extended.ipynb` and in the `FairnessExploration_L-Town.ipynb` notebook, the proposed approaches are implemented.
+-   In the `FairnessExploration_Hanoi_extended.ipynb` and in the `FairnessExploration_L-Town.ipynb` notebook, the proposed approaches and results are implemented.
 
 ## Requirements
 All requirements for the whole project are listed in the `Implementation/requirements.txt` file.
