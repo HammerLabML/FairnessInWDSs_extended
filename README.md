@@ -37,7 +37,7 @@ All requirements for the whole project are listed in the `Implementation/require
 You can cite the corresponding paper using the following BibTex entry:
 ```
 @article{
-    Strotherm2024FairClassification_InProcess_CovarianceConstraints,
+    Strotherm2024FairClassification,
     author      = {Strotherm, Janine and Ashraf, Inaam and Hammer, Barbara},
     title       = {{Fairness-enhancing classification methods for non-binary sensitive features -- How to fairly detect leakages in water distribution systems}},
     year        = {2024},
