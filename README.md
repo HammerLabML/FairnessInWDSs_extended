@@ -34,6 +34,8 @@ The methods themselves can be used using the `3_DataUsage` subfolder:
 All requirements for the whole project are listed in the `Implementation/requirements.txt` file.
 
 ## How To Cite
+You can cite the corresponding paper using the following BibTex entry:
+```
 @article{
     Strotherm2024FairClassification_InProcess_CovarianceConstraints,
     author      = {Strotherm, Janine and Ashraf, Inaam and Hammer, Barbara},
@@ -44,3 +46,4 @@ All requirements for the whole project are listed in the `Implementation/require
     volume      = {10},
     pages       = {e2317}
 }
+```
